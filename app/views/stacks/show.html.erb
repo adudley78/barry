@@ -1,22 +1,20 @@
 <section class="todoapp">
   <header class="header">
-    <h1>Hi, I'm Barry.</h1>
-    <input class="new-todo" placeholder="Find a topic and create your first News Stack." autofocus="">
+    <h1><%= @stack.name %></h1>
   </header>
 
   <section class="main">
     <ul class="topic-list">
-      <h3>Trending Stacks</h3>
-        <% @stacks.each do |stack| %>
           <div class="view">
-              <label><%= link_to stack.name, stack_path(stack) %></label>
-            <% end %><br>
+            <h3>Stack Topic Goes Here</h3>
+            <p>Headline 1</p>
+            <p>Headline 2</p>
+            <p>Headline 3</p>
+            <p>Headline 4</p>
+            <p>Headline 5</p><br>
           </div>
     </ul>
   </section>
-
-  <footer class="footer">
-  </footer>
 
 </section>
 

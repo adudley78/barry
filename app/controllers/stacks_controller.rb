@@ -7,4 +7,12 @@ class StacksController < ApplicationController
     # raise @stacks.inspect
   end
 
+  def show
+    @stack = Stack.find(params[:id])
+  end
+
+  private
+
+  # refactor @stack = Stack.find(params[:id]) to private method
+
 end
