@@ -1,0 +1,27 @@
+<section class="todoapp">
+  <header class="header">
+    <h1>Hi, I'm Barry.</h1>
+    <input class="new-todo" placeholder="Find a topic and create your first News Stack." autofocus="">
+  </header>
+
+  <section class="main">
+    <ul class="topic-list">
+      <h3>Trending Stacks</h3>
+        <% @stacks.each do |stack| %>
+          <div class="view">
+              <label><a href="#"><%= stack.name %></a></label>
+            <% end %><br>
+          </div>
+    </ul>
+  </section>
+
+  <footer class="footer">
+  </footer>
+
+</section>
+
+    <footer class="info">
+			<p>Double-click to edit a todo</p>
+			<p>Created by <a href="https://www.linkedin.com/in/adamdudley/">Adam Dudley</a></p>
+			<p>&copy 2019 Barry</p>
+		</footer>
